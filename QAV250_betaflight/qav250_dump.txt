@@ -125,6 +125,7 @@ feature RX_PPM
 feature MOTOR_STOP
 feature SOFTSERIAL
 feature TELEMETRY
+feature AIRMODE
 beeper GYRO_CALIBRATED
 beeper RX_LOST
 beeper RX_LOST_LANDING
@@ -482,16 +483,15 @@ set horizon_tilt_expert_mode = OFF
 rateprofile 0
 
 set rc_rate = 120
-set rc_rate_yaw = 100
+set rc_rate_yaw = 130
 set rc_expo = 70
 set rc_expo_yaw = 0
 set thr_mid = 50
 set thr_expo = 0
 set roll_srate = 76
 set pitch_srate = 76
-set yaw_srate = 80
+set yaw_srate = 70
 set tpa_rate = 50
 set tpa_breakpoint = 1500
 
 # 
-
