@@ -245,7 +245,7 @@ mode_color 6 8 0
 mode_color 6 9 0
 mode_color 6 10 0
 mode_color 7 0 3
-aux 0 0 0 1800 2100
+aux 0 0 0 1825 2100
 aux 1 0 0 900 900
 aux 2 0 0 900 900
 aux 3 0 0 900 900
@@ -304,7 +304,7 @@ rxfail 16 h
 rxfail 17 h
 set align_gyro = DEFAULT
 set gyro_lpf = OFF
-set gyro_sync_denom = 8
+set gyro_sync_denom = 6
 set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 90
 set gyro_notch1_hz = 400
@@ -348,12 +348,12 @@ set blackbox_p_ratio = 32
 set blackbox_device = SERIAL
 set blackbox_on_motor_test = OFF
 set blackbox_record_acc = ON
-set min_throttle = 1000
+set min_throttle = 1070
 set max_throttle = 2000
 set min_command = 1000
-set use_unsynced_pwm = OFF
+set use_unsynced_pwm = ON
 set motor_pwm_protocol = ONESHOT125
-set motor_pwm_rate = 480
+set motor_pwm_rate = 800
 set motor_pwm_inversion = OFF
 set thr_corr_value = 0
 set thr_corr_angle = 800
@@ -487,10 +487,11 @@ set rc_expo = 70
 set rc_expo_yaw = 0
 set thr_mid = 50
 set thr_expo = 0
-set roll_srate = 60
-set pitch_srate = 60
+set roll_srate = 76
+set pitch_srate = 76
 set yaw_srate = 80
 set tpa_rate = 50
 set tpa_breakpoint = 1500
 
 # 
+
