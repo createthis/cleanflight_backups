@@ -126,6 +126,7 @@ feature MOTOR_STOP
 feature SOFTSERIAL
 feature TELEMETRY
 feature AIRMODE
+feature ANTI_GRAVITY
 beeper GYRO_CALIBRATED
 beeper RX_LOST
 beeper RX_LOST_LANDING
@@ -305,7 +306,7 @@ rxfail 16 h
 rxfail 17 h
 set align_gyro = DEFAULT
 set gyro_lpf = OFF
-set gyro_sync_denom = 6
+set gyro_sync_denom = 3
 set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 90
 set gyro_notch1_hz = 400
@@ -352,9 +353,9 @@ set blackbox_record_acc = ON
 set min_throttle = 1070
 set max_throttle = 2000
 set min_command = 1000
-set use_unsynced_pwm = ON
+set use_unsynced_pwm = OFF
 set motor_pwm_protocol = ONESHOT125
-set motor_pwm_rate = 800
+set motor_pwm_rate = 2000
 set motor_pwm_inversion = OFF
 set thr_corr_value = 0
 set thr_corr_angle = 800
@@ -414,7 +415,7 @@ set alt_hold_fast_change = ON
 set deadband = 0
 set yaw_deadband = 0
 set yaw_control_reversed = OFF
-set pid_process_denom = 1
+set pid_process_denom = 3
 set tlm_switch = OFF
 set tlm_inverted = OFF
 set tlm_halfduplex = ON
@@ -465,8 +466,8 @@ set d_pitch = 31
 set p_roll = 44
 set i_roll = 25
 set d_roll = 35
-set p_yaw = 95
-set i_yaw = 10
+set p_yaw = 75
+set i_yaw = 39
 set d_yaw = 20
 set p_alt = 50
 set i_alt = 0
@@ -483,8 +484,8 @@ set horizon_tilt_expert_mode = OFF
 rateprofile 0
 
 set rc_rate = 120
-set rc_rate_yaw = 130
-set rc_expo = 70
+set rc_rate_yaw = 120
+set rc_expo = 0
 set rc_expo_yaw = 0
 set thr_mid = 50
 set thr_expo = 0
